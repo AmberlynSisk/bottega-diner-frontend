@@ -1,0 +1,110 @@
+.menu {
+    margin-top: 30px;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+
+    .menu-item-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 40px;
+    }
+
+    .dishes {
+        .container {
+            position: relative;
+            height: 300px;
+            width: 350px;
+
+            .image {
+                height: 300px;
+                width: 100%;
+                border-radius: 10px;
+              }
+
+            .overlay {
+                position: absolute;
+                border-radius: 10px;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 300px;
+                width: 100%;
+                opacity: 0;
+                transition: .5s ease;
+                background-color: #313131;
+
+                .text {
+                    color: white;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    -webkit-transform: translate(-50%, -50%);
+                    -ms-transform: translate(-50%, -50%);
+                    transform: translate(-50%, -50%);
+                    text-align: center;
+
+                    .title {
+                        font-family: 'Dancing Script', cursive;
+                        font-size: 1.7em;
+                      }
+
+                      .price .description {
+                        font-size: 0.9em;
+                      }
+                  }
+            }
+          }
+
+          .container:hover .overlay {
+            opacity: 1;
+          }
+
+          h2 {
+            font-size: 1.9em;
+            padding: 30px;
+            font-family: 'Dancing Script', cursive;
+          }
+
+          h4 {
+            margin-bottom: 20px;
+          }
+    }
+}
+
+.main-title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.side-title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.dinner-main-title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2em;
+}
+
+.dinner-main-subtitle {
+    margin-bottom: 15px;
+}
+
+.add-to-cart-button {
+  margin-top: 10px;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+
+  &:hover {
+    opacity: 60%;
+  }
+}

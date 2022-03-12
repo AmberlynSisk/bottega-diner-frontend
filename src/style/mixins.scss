@@ -1,0 +1,12 @@
+@mixin link-styles {
+    text-decoration: none;
+    font-family: $font-regular;
+    color: $white;
+    transition: 0.3s;
+    font-size: 1.2em;
+    font-weight: 300;
+
+    &:hover {
+        color: $red;
+    }
+}

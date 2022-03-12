@@ -1,0 +1,87 @@
+.cart-container {
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .cart-item {
+        width: 100vw;
+        display: grid;
+        grid-template-columns: 1fr 2fr 3fr 2fr;
+        margin-top: 20px;
+        align-items: center;
+
+        .delete-btn {
+            border: none;
+            background-color: transparent;
+            font-size: 2em;
+            transition: 0.5s ease-in-out;
+
+            &:hover {
+                color: $red;
+            }
+        }
+
+
+        .cart-image-wrapper img {
+            width: 100px;
+            height: 100px;
+            border-radius: 3px;
+        }
+    }
+
+    .submit-order-btn {
+        margin-top: 30px;
+        width: 30%;
+        height: 50px;
+        border: none;
+        background-color: $dark-grey;
+        color: $white;
+        border-radius: 4px;
+        font-size: 1.4em;
+        transition: 0.5s ease-in-out;
+
+        &:hover {
+            color: $red;
+        }
+    }
+}
+
+.submit-order-message-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .random-message {
+        margin-top: 60px;
+        font-size: 1.2em;
+    }
+
+    .cart-total-wrapper {
+        margin-top: 40px;
+        font-size: 1.2em;
+    }
+
+    .checkout-btn {
+        margin-top: 50px;
+        font-size: 1.2em;
+        width: 30%;
+        height: 50px;
+        border: none;
+        background-color: $dark-grey;
+        color: $white;
+        border-radius: 4px;
+        transition: 0.5s ease-in-out;
+
+        &:hover {
+            color: $red;
+        }
+    }
+}
+
+.empty-cart {
+    margin-top: 150px;
+}
